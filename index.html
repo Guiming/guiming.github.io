@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Academic website of Guiming Zhang, Associate Professor of GIScience at the University of Denver." />
+        <meta name="author" content="Guiming Zhang" />
         <title>Guiming Zhang, Ph.D.</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/site-enhancements.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -30,8 +31,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#researcharea">Research Areas</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#students">Students</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching &amp; Mentoring</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#service">Service</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                 </ul>
@@ -50,7 +50,44 @@
                         5050 E. Iliff Avenue, Boettcher West #240 · Denver, CO 80208 · (303) 871-7908 ·
                         <a href="mailto:guiming.zhang@du.edu">guiming.zhang@du.edu</a>
                     </div>
-                    <p class="lead mb-5">I am an Associate Professor of GIScience in the Department of Geography & the Environment at the University of Denver, USA. My research interests span GIScience, volunteered geographic information (VGI), geospatial big data analytics, geospatial artificial intelligence (GeoAI), geovisualization/geovisual analytics, and high-performance geocomputation, with applications to social sensing and environmental modeling and mapping (species distribution modeling, habitat suitability mapping, digital soil mapping, etc.).</p>
+                    <p class="lead mb-4">I am an Associate Professor of GIScience in the <a href="https://science.du.edu/geography" target="_blank" rel="noopener noreferrer">Department of Geography &amp; the Environment</a> at the University of Denver. I develop methods and tools for understanding geospatial big data, with applications in social sensing and environmental modeling.</p>
+
+                    <p class="mb-4">My research connects volunteered geographic information, GeoAI, geovisual analytics, and high-performance geocomputation to study people, places, and environmental processes.</p>
+
+                    <nav class="section-jump-links mb-5" aria-label="Jump to primary sections">
+                        <a href="#researcharea">Research</a>
+                        <a href="#publications">Publications</a>
+                        <a href="#teaching">Teaching &amp; Mentoring</a>
+                        <a href="#service">Service</a>
+                    </nav>
+
+                    <h2 class="overview-heading">Research at a glance</h2>
+                    <div class="research-overview-grid mb-5">
+                        <a class="overview-card" href="#volunteered-geographic-information">
+                            <h3>VGI &amp; Social Sensing</h3>
+                            <p>I study how volunteered and human-generated geographic data reveal population behavior, and how spatial biases in those data can be understood and mitigated.</p>
+                        </a>
+                        <a class="overview-card" href="#geospatial-artificial-intelligence">
+                            <h3>GeoAI &amp; Environmental Modeling</h3>
+                            <p>I build transferable machine-learning and ensemble approaches for urban climate, species distribution, habitat suitability, and digital soil mapping.</p>
+                        </a>
+                        <a class="overview-card" href="#geovisualization-and-geovisual-analytics">
+                            <h3>Geovisual Analytics &amp; Geocomputation</h3>
+                            <p>I create interactive visual tools and GPU-accelerated methods that make large, complex spatial processes explorable and computationally tractable.</p>
+                        </a>
+                    </div>
+
+                    <div class="recent-work mb-5">
+                        <div class="section-heading-row">
+                            <h2 class="overview-heading mb-0">Recent work</h2>
+                            <a href="#publications">View all publications &rarr;</a>
+                        </div>
+                        <ul>
+                            <li><strong>Gong X, Liu L, Lu Y, Zhang G, Huang X, and Lin Y.</strong> (2026). <em>Sleepless in America: A social sensing study of pandemic-era sleeplessness using nighttime social media data.</em> <strong>PLOS One</strong>.</li>
+                            <li><strong>Mitra B and Zhang G.</strong> (2026). <em>Downscaling urban land surface temperature using AlphaEarth satellite GeoAI embeddings: A cross-city evaluation in the US.</em> <strong>Urban Climate</strong>.</li>
+                            <li><strong>Zhang G.</strong> (2026). <em>Demystifying Geographic "Laws" for Soil Mapping via Interactive Geovisualization.</em> <strong>ISPRS International Journal of Geo-Information</strong>.</li>
+                        </ul>
+                    </div>
 
                     <div class="social-icons">
                         <a title="University of Denver" class="social-icon" href="https://science.du.edu/about/faculty-directory/guiming-zhang" target="_blank"><i class="fas fa-university"></i></a>
@@ -122,10 +159,12 @@
 
             <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="researcharea">
               <div class="w-100">
-                <h2 class="mb-5">RESEARCH AREAS</h2>
+                <h2 class="mb-4">Research Areas</h2>
                 <div class = "w-100">
 
-                  <p class="lead mb-5"> I am particularly interested in volunteered geographic information (VGI) and other forms of geospatial big data, geospatial artificial intelligence (GeoAI), and their applications to social sensing, as well as to environmental modeling and mapping. I am also interested in geocomputation as an enabler of such endeavors. My research at these fronts has led to quality publications in top GIScience journals including the <i>International Journal of Geographical Information Science </i> and <i>Transactions in GIS</i>. I was also invited to author the topic entry "Volunteered Geographic Information" in <i>The Geographic Information Science & Technology Body of Knowledge</i>, compiled by <i>The University Consortium for Geographic Information Science</i>, and to contribute a chapter on VGI and crowdsourcing to <i>The Geoinformatics Frontier: AI, Big Data, and Crowdsourced Technologies</i>. </p>
+                  <p class="lead mb-4"> I am particularly interested in volunteered geographic information (VGI) and other forms of geospatial big data, geospatial artificial intelligence (GeoAI), and their applications to social sensing, as well as to environmental modeling and mapping. I am also interested in geocomputation as an enabler of such endeavors. My research at these fronts has led to quality publications in top GIScience journals including the <i>International Journal of Geographical Information Science </i> and <i>Transactions in GIS</i>. I was also invited to author the topic entry "Volunteered Geographic Information" in <i>The Geographic Information Science & Technology Body of Knowledge</i>, compiled by <i>The University Consortium for Geographic Information Science</i>, and to contribute a chapter on VGI and crowdsourcing to <i>The Geoinformatics Frontier: AI, Big Data, and Crowdsourced Technologies</i>. </p>
+
+                  <nav id="research-area-links" class="research-area-links mb-5" aria-label="Research areas"></nav>
                   <h3 class="mb-3" style = "color:green"> Volunteered Geographic Information </h3>
                   <p class="lead mb-3"> Data quality of VGI (and other geospatia big data) is under constant scrutiny as it is a fundamental issue to address when using such kinds of data in geographic research. My research specifically contributes to developing novel methodologies for tackling spatial sampling/observation bias in geospatial big data (one of the prominent data quality issues) to improve the quality of inferences made from them, with practical applications in environmental modeling and mapping (e.g., species distribution modeling and digital soil mapping).  </p>
 
@@ -599,6 +638,13 @@
               <div class="w-100">
                 <h2 class="mb-3">Publications</h2>
 
+                <p class="publication-metrics"><strong>Published:</strong> 39 total; 25 first-author; <em>h</em>-index 17; i10-index 25. <a href="https://scholar.google.com/citations?user=LJUWjxAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> metrics synchronized September 15, 2026.</p>
+
+                <div class="publication-controls" aria-label="Publication year controls">
+                  <button class="btn btn-sm btn-outline-primary" type="button" data-publication-action="expand">Expand all years</button>
+                  <button class="btn btn-sm btn-outline-secondary" type="button" data-publication-action="collapse">Collapse all years</button>
+                </div>
+
                 <div class="resume-date text-md-right mb-5">
                   <span style = "margin-left:0em"><span style = "color:green">[<b>VGI</b>]</span> - Volunteered Geographic Information</span><br>
                   <span style = "margin-left:0em"><span style = "color:crimson">[<b>SS</b>]</span> - Social Sensing</span><br>
@@ -868,12 +914,12 @@
                       <a href = "articles\2026 - Book Chapter - VGI Framework.pdf" target="_blank">[PDF]</a>
                     </div>
 
-                     <div class="mb-3"> [<span style = "color:green">VGI</span>/<span style = "color:purple">EM</span> <b>25</b>] &nbsp; <b>Zhang G</b>. (2022). Mitigating spatial bias in volunteered geographic information for spatial modeling and prediction."&nbsp;in: Li, B., Shi, X., Zhu, A.X., Wang, C., and Lin, H. (Eds.): <font color="black"><i>New Thinking in GIScience.</i></font>&nbsp;Springer Nature, Singapore, pp. 179-190.&nbsp;
+                     <div class="mb-3"> [<span style = "color:green">VGI</span>/<span style = "color:purple">EM</span> <b>25</b>] &nbsp; <b>Zhang G</b>. (2022). Mitigating spatial bias in volunteered geographic information for spatial modeling and prediction.&nbsp;In: Li, B., Shi, X., Zhu, A.X., Wang, C., and Lin, H. (Eds.): <font color="black"><i>New Thinking in GIScience.</i></font>&nbsp;Springer Nature, Singapore, pp. 179-190.&nbsp;
                       <a href = "https://doi.org/10.1007/978-981-19-3816-0_20" target="_blank">[Web]</a>
                       <a href = "articles\2022-NewThinkingGIScience-MitigatingSpatialBiasinVGI.pdf" target="_blank">[PDF]</a>
                     </div>
                       
-                    <div class="mb-3"> [<span style = "color:green">VGI</span>/<span style = "color:purple">EM</span> <b>14</b>] &nbsp; <b>Zhang G</b>. (2019). Integrating citizen science and GIS for wildlife population monitoring and habitat assessment."&nbsp;in: Ferretti, M. (Eds.): <font color="black"><i>Wildlife Population Monitoring.</i></font>&nbsp;IntechOpen Limited, London, UK, pp. 1-14.&nbsp;
+                    <div class="mb-3"> [<span style = "color:green">VGI</span>/<span style = "color:purple">EM</span> <b>14</b>] &nbsp; <b>Zhang G</b>. (2019). Integrating citizen science and GIS for wildlife population monitoring and habitat assessment.&nbsp;In: Ferretti, M. (Ed.): <font color="black"><i>Wildlife Population Monitoring.</i></font>&nbsp;IntechOpen Limited, London, UK, pp. 1-14.&nbsp;
                       <a href = "https://www.intechopen.com/chapters/65221" target="_blank">[Web]</a>
                         <a href = "articles\2019 - WPM - Integrating Citizen Science and GIS for Wildlife Habitat Assessment.pdf" target="_blank">[PDF]</a>
                     </div>
@@ -894,7 +940,7 @@
             <!--Teaching-->
             <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="teaching">
               <div class="w-100">
-                <h2 class="mb-5">Teaching</h2>
+                <h2 class="mb-5">Teaching &amp; Mentoring</h2>
 
                 <div class="subheading mb-3">University of Denver</div>
                 <ul class="fa-ul mb-5">
@@ -943,7 +989,7 @@
               <!-- Students-->
               <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="students">
                 <div class="w-100">
-                  <h2 class="mb-5">Students</h2>
+                  <h2 class="mb-5">Mentoring</h2>
                   <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="resume-content">
 
@@ -1148,7 +1194,62 @@
                           &nbsp;&nbsp; <span style="color:indianred"> 2024 Spring</span> </li>
                       </ul>
 
-                    <h3 class="mb-3">Professional Community</h3>
+                    <h3 class="mb-4">Professional Community</h3>
+
+                    <div class="service-group-grid mb-5">
+                      <section class="service-group" aria-labelledby="service-ucgis">
+                        <h4 id="service-ucgis">UCGIS</h4>
+                        <ul>
+                          <li>Committee Member, Research Committee: <em>Initiative on CyberGIS and Decision Support Systems</em> <a href="https://www.ucgis.org/initiative-on-cybergis-and-decision-support-systems" target="_blank" rel="noopener noreferrer">[Web]</a>, <strong>University Consortium for Geographic Information Science</strong> <span class="service-date">2021&ndash;present</span></li>
+                        </ul>
+                      </section>
+
+                      <section class="service-group" aria-labelledby="service-aag">
+                        <h4 id="service-aag">AAG</h4>
+                        <ul>
+                          <li>Chair, <strong>Cyberinfrastructure Specialty Group</strong> <a href="https://aagcisg.wordpress.com/" target="_blank" rel="noopener noreferrer">[Web]</a> <span class="service-date">2022&ndash;2023</span></li>
+                          <li>Vice Chair, <strong>Cyberinfrastructure Specialty Group</strong> <span class="service-date">2021&ndash;2022</span></li>
+                          <li>Board of Director, <strong>Cyberinfrastructure Specialty Group</strong> <span class="service-date">2019&ndash;2021</span></li>
+                          <li>Judge, <em>Graduate Student Paper Competition</em>, <strong>Great Plains-Rocky Mountain Division Annual Meeting</strong> <span class="service-date">2022</span></li>
+                          <li>Judge, <em>The Jacques May Thesis Prize</em>, <strong>Health and Medical Geography Specialty Group</strong> <span class="service-date">2019</span></li>
+                        </ul>
+                      </section>
+
+                      <section class="service-group" aria-labelledby="service-cpgis">
+                        <h4 id="service-cpgis">CPGIS</h4>
+                        <ul>
+                          <li>Board of Directors, <strong>International Association of Chinese Professionals in Geographic Information Sciences</strong> <span class="service-date">2024&ndash;2025</span></li>
+                          <li>Committee Chair, <strong>Election Committee</strong> <span class="service-date">2024</span></li>
+                          <li>Committee Chair, <strong>Social Event Committee</strong> <span class="service-date">2023</span></li>
+                          <li>Committee Member, <strong>Conference Site Selection Committee</strong> <span class="service-date">2024&ndash;present</span></li>
+                        </ul>
+                      </section>
+
+                      <section class="service-group" aria-labelledby="service-iemss">
+                        <h4 id="service-iemss">iEMSs</h4>
+                        <ul>
+                          <li>Committee Member, <strong>Early Career Scientist Committee</strong>, International Environmental Modelling and Software Society <span class="service-date">2022&ndash;present</span></li>
+                        </ul>
+                      </section>
+                    </div>
+
+                    <h3 class="mb-3">Reviewer Board Memberships</h3>
+                    <ul class="service-list mb-5">
+                      <li>Reviewer Board Member, <strong><em>ISPRS International Journal of Geo-Information</em></strong> <a href="https://www.mdpi.com/journal/ijgi/submission_reviewers" target="_blank" rel="noopener noreferrer">[Web]</a> <span class="service-date">2019&ndash;present</span></li>
+                      <li>Reviewer Board Member, <strong><em>Remote Sensing</em></strong> <a href="https://www.mdpi.com/journal/remotesensing/submission_reviewers" target="_blank" rel="noopener noreferrer">[Web]</a> <span class="service-date">2019&ndash;present</span></li>
+                    </ul>
+
+                    <h3 class="mb-2">Guest Editorialships</h3>
+                    <p class="record-note">These roles are documented in my <a href="https://www.webofscience.com/wos/author/record/AAA-8441-2019" target="_blank" rel="noopener noreferrer">verified Web of Science editor record</a>.</p>
+                    <ul class="service-list mb-5">
+                      <li>Lead Guest Editor, <em>Geographical Principles in the New Era of Spatial Analysis and Modeling</em> <a href="https://think.taylorandfrancis.com/special_issues/geographical-principles-in-the-new-era-of-spatial-analysis-and-modeling/" target="_blank" rel="noopener noreferrer">[Web]</a>, <strong><em>Annals of GIS</em></strong> <span class="service-date">2026&ndash;2027</span></li>
+                      <li>Co-Guest Editor, <em>Advances and Applications of Geospatial Modeling and Analysis in Digital Twins</em> <a href="https://www.frontiersin.org/research-topics/45922/advances-and-applications-of-geospatial-modeling-and-analysis-in-digital-twins" target="_blank" rel="noopener noreferrer">[Web]</a>, <strong><em>Frontiers in Earth Science</em></strong> <span class="service-date">2022&ndash;2023</span></li>
+                      <li>Lead Guest Editor, <em>Remote Sensing and GIS Technologies for Sustainable Ecosystem Management</em> <a href="https://www.mdpi.com/journal/remotesensing/special_issues/A55227V54H" target="_blank" rel="noopener noreferrer">[Web]</a>, <strong><em>Remote Sensing</em></strong> <span class="service-date">2022&ndash;2023</span></li>
+                      <li>Lead Guest Editor, <em>Mapping, Modeling and Prediction with VGI</em> <a href="https://www.mdpi.com/journal/ijgi/special_issues/VGI_IJGI" target="_blank" rel="noopener noreferrer">[Web]</a>, <strong><em>ISPRS International Journal of Geo-Information</em></strong> <span class="service-date">2020&ndash;2021</span></li>
+                      <li>Co-Guest Editor, <em>Geospatial Semantic, Ontology and Knowledge Graph</em> <a href="https://www.tandfonline.com/toc/tbed20/3/3" target="_blank" rel="noopener noreferrer">[Web]</a>, <strong><em>Big Earth Data</em></strong> <span class="service-date">2019</span></li>
+                    </ul>
+
+                    <div class="legacy-service-content" aria-hidden="true">
                       <ul class="fa-ul mb-5">
                        
                         <li>
@@ -1244,8 +1345,56 @@
                           Reviewer Board. <i><b>Remote Sensing</b></i> Journal <a href = "https://www.mdpi.com/journal/remotesensing/submission_reviewers" target="_blank">[Web]</a>
                           &nbsp;&nbsp; <span style="color:indianred"> 2019 – present</span> </li> 
                       </ul>
+                    </div>
 
                       <h3 class="mb-3">Conference Organization</h3>
+
+                      <div class="conference-years mb-5">
+                        <details class="year-group conference-year" open>
+                          <summary><span>2026</span><span class="year-count">2 entries</span></summary>
+                          <ul>
+                            <li><strong>Paper Session Lead Organizer and Chair:</strong> <em>Geographical Principles in Spatial Analysis and Modeling</em>. 33rd International Conference on Geoinformatics 2026, University Town, National University of Singapore, Singapore <span class="service-date">Jul 19&ndash;22, 2026</span></li>
+                            <li><strong>Paper Session Lead Organizer and Chair:</strong> <em>Geographical Principles in Spatial Analysis and Modeling</em>. 2026 AAG Annual Meeting, San Francisco, CA <span class="service-date">Mar 17&ndash;21, 2026</span></li>
+                          </ul>
+                        </details>
+
+                        <details class="year-group conference-year" open>
+                          <summary><span>2023</span><span class="year-count">4 entries</span></summary>
+                          <ul>
+                            <li>Organizing Committee Member: <em>The 9th Symposium on Human Dynamics Research</em>. 2023 AAG Annual Meeting, Denver, CO <span class="service-date">Mar 23&ndash;27, 2023</span></li>
+                            <li>Paper Session Co-organizer: <em>Symposium on Human Dynamics Research: Mining Human Dynamics with Big Data</em>. 2023 AAG Annual Meeting, Denver, CO <span class="service-date">Mar 23&ndash;27, 2023</span></li>
+                            <li>Paper Session Co-organizer: <em>2023 CISG Robert Raskin Student Competition</em>. 2023 AAG Annual Meeting, Denver, CO <span class="service-date">Mar 23&ndash;27, 2023</span></li>
+                            <li>Paper Session Co-organizer: <em>CyberGIS and Spatial Decision Support Systems</em>. 2023 AAG Annual Meeting, Denver, CO <span class="service-date">Mar 23&ndash;27, 2023</span></li>
+                          </ul>
+                        </details>
+
+                        <details class="year-group conference-year" open>
+                          <summary><span>2022</span><span class="year-count">4 entries</span></summary>
+                          <ul>
+                            <li>Paper Session Organizer/Chair: <em>2022 CISG Robert Raskin Student Competition</em>. 2022 AAG Annual Meeting, New York City, NY <span class="service-date">Feb 25&ndash;Mar 1, 2022</span></li>
+                            <li>Paper Session Organizer: <em>GeoAI and CyberGIS for Advancing Spatial Decision Making</em>. 2022 AAG Annual Meeting, New York City, NY <span class="service-date">Feb 25&ndash;Mar 1, 2022</span></li>
+                            <li>Organizing Committee Member: <em>The 8th Symposium on Human Dynamics Research</em>. 2022 AAG Annual Meeting, New York City, NY <span class="service-date">Feb 25&ndash;Mar 1, 2022</span></li>
+                            <li>Paper Session (Virtual) Organizer/Chair: <em>Mining Human Dynamics with Big Data</em>. 2022 AAG Annual Meeting, New York City, NY <span class="service-date">Feb 25&ndash;Mar 1, 2022</span></li>
+                          </ul>
+                        </details>
+
+                        <details class="year-group conference-year" open>
+                          <summary><span>2021</span><span class="year-count">2 entries</span></summary>
+                          <ul>
+                            <li>Organizing Committee Member: <em>The 7th Symposium on Human Dynamics Research</em>. 2021 AAG Annual Meeting, Seattle, WA <span class="service-date">Apr 7&ndash;11, 2021</span></li>
+                            <li>Paper Session (Virtual) Organizer/Chair: <em>Mapping, Modeling and Prediction with VGI</em>. 2021 AAG Annual Meeting, Seattle, WA <span class="service-date">Apr 7&ndash;11, 2021</span></li>
+                          </ul>
+                        </details>
+
+                        <details class="year-group conference-year" open>
+                          <summary><span>2020</span><span class="year-count">1 entry</span></summary>
+                          <ul>
+                            <li>Paper Session Organizer/Chair: <em>Mapping, Modeling and Prediction with VGI</em>. 2020 AAG Annual Meeting, Denver, CO <span class="service-date">Apr 6&ndash;10, 2020</span> [Cancelled due to COVID-19]</li>
+                          </ul>
+                        </details>
+                      </div>
+
+                      <div class="legacy-service-content" aria-hidden="true">
                         <ul class="fa-ul mb-5">
                           <li>
                           <i class="fa-li fa fa-check"></i>
@@ -1305,9 +1454,62 @@
                           &nbsp;&nbsp; <span style="color:indianred"> Apr 6-10, 2020 </span> [Cancelled due to COVID-19] </li>
 
                         </ul>
+                      </div>
 
-                    <h3 class="mb-0">Journal Reviewer</h3>
+                    <h3 class="mb-2">Journal Reviewer</h3>
+                    <p class="record-note"><strong>162 verified peer reviews</strong> across 47 journals. Counts synchronized from my <a href="https://www.webofscience.com/wos/author/record/AAA-8441-2019" target="_blank" rel="noopener noreferrer">Web of Science researcher profile</a> on September 15, 2026.</p>
 
+                    <ul class="review-grid mb-5" aria-label="Verified review counts by journal">
+                      <li><span class="review-count">40</span><span>Annals of GIS</span></li>
+                      <li><span class="review-count">17</span><span>Transactions in GIS</span></li>
+                      <li><span class="review-count">16</span><span>ISPRS International Journal of Geo-Information</span></li>
+                      <li><span class="review-count">11</span><span>International Journal of Geographical Information Science</span></li>
+                      <li><span class="review-count">4</span><span>Big Earth Data</span></li>
+                      <li><span class="review-count">4</span><span>Data</span></li>
+                      <li><span class="review-count">4</span><span>Diversity and Distributions</span></li>
+                      <li><span class="review-count">4</span><span>International Journal of Digital Earth</span></li>
+                      <li><span class="review-count">4</span><span>Sustainability</span></li>
+                      <li><span class="review-count">3</span><span>Arabian Journal of Geosciences</span></li>
+                      <li><span class="review-count">3</span><span>Ecological Indicators</span></li>
+                      <li><span class="review-count">3</span><span>PLOS One</span></li>
+                      <li><span class="review-count">3</span><span>Remote Sensing</span></li>
+                      <li><span class="review-count">2</span><span>Applied Sciences</span></li>
+                      <li><span class="review-count">2</span><span>Earth Science Informatics</span></li>
+                      <li><span class="review-count">2</span><span>Ecological Informatics</span></li>
+                      <li><span class="review-count">2</span><span>Frontiers of Computer Science</span></li>
+                      <li><span class="review-count">2</span><span>Geo-Spatial Information Science</span></li>
+                      <li><span class="review-count">2</span><span>Geomatics, Natural Hazards and Risk</span></li>
+                      <li><span class="review-count">2</span><span>IEEE Access</span></li>
+                      <li><span class="review-count">2</span><span>IEEE Geoscience and Remote Sensing Letters</span></li>
+                      <li><span class="review-count">2</span><span>International Journal of Environmental Research and Public Health</span></li>
+                      <li><span class="review-count">2</span><span>PeerJ Computer Science</span></li>
+                      <li><span class="review-count">2</span><span>Scientific Reports</span></li>
+                      <li><span class="review-count">2</span><span>The Professional Geographer</span></li>
+                      <li><span class="review-count">1</span><span>Big Data and Cognitive Computing</span></li>
+                      <li><span class="review-count">1</span><span>Cartography and Geographic Information Science</span></li>
+                      <li><span class="review-count">1</span><span>Citizen Science: Theory and Practice</span></li>
+                      <li><span class="review-count">1</span><span>Computers &amp; Geosciences</span></li>
+                      <li><span class="review-count">1</span><span>Drones</span></li>
+                      <li><span class="review-count">1</span><span>Earth System Science Data</span></li>
+                      <li><span class="review-count">1</span><span>Environment and Planning B: Urban Analytics and City Science</span></li>
+                      <li><span class="review-count">1</span><span>Geocarto International</span></li>
+                      <li><span class="review-count">1</span><span>IEEE Transactions on Geoscience and Remote Sensing</span></li>
+                      <li><span class="review-count">1</span><span>IEEE Transactions on Knowledge and Data Engineering</span></li>
+                      <li><span class="review-count">1</span><span>Information</span></li>
+                      <li><span class="review-count">1</span><span>International Journal of Applied Earth Observation and Geoinformation</span></li>
+                      <li><span class="review-count">1</span><span>International Journal of Image and Data Fusion</span></li>
+                      <li><span class="review-count">1</span><span>International Journal of Parallel, Emergent and Distributed Systems</span></li>
+                      <li><span class="review-count">1</span><span>International Journal of Remote Sensing</span></li>
+                      <li><span class="review-count">1</span><span>Journal of Maps</span></li>
+                      <li><span class="review-count">1</span><span>Journal of the Royal Statistical Society: Series C (Applied Statistics)</span></li>
+                      <li><span class="review-count">1</span><span>Natural Hazards</span></li>
+                      <li><span class="review-count">1</span><span>Pedosphere</span></li>
+                      <li><span class="review-count">1</span><span>Sensors</span></li>
+                      <li><span class="review-count">1</span><span>Social Science Computer Review</span></li>
+                      <li><span class="review-count">1</span><span>Social Sciences</span></li>
+                    </ul>
+
+                    <div class="legacy-service-content" aria-hidden="true">
                       <ul class="fa-ul mb-3">
                         <li class="text-md-right">
                           <i class="fa fa-user text-danger"></i>10+ &nbsp;&nbsp;
@@ -1424,6 +1626,7 @@
                         <i class="fa-li fa fa-user text-warning"></i>
                         Transactions in GIS </li>
                       </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1434,7 +1637,53 @@
             <!-- Awards-->
             <section class="resume-section  p-3 p-lg-5 d-flex align-items-center" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Honors</h2>
+                    <h2 class="mb-5">Awards &amp; Honors</h2>
+
+                    <div class="award-groups">
+                      <section class="award-group" aria-labelledby="recent-grants">
+                        <h3 id="recent-grants">Recent Grants</h3>
+                        <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2026&nbsp;&nbsp;DU Faculty Research Fund (FRF) Grant, University of Denver. PI</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2026&nbsp;&nbsp;DU CEGAIA Curricular Innovation Grant, University of Denver. PI</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2026&nbsp;&nbsp;NSM Olin Faculty Development Grant, University of Denver. PI</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2025&nbsp;&nbsp;DU Proposal Incentive Program Grant, University of Denver. PI</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2025&nbsp;&nbsp;NSM Olin Faculty Development Grant, University of Denver. PI</li>
+                        </ul>
+                      </section>
+
+                      <section class="award-group" aria-labelledby="earlier-grants">
+                        <h3 id="earlier-grants">Earlier Grants</h3>
+                        <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2022&nbsp;&nbsp;DU Professional Research Opportunities for Faculty (PROF) Grant, University of Denver. PI</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2022&nbsp;&nbsp;DU Faculty Research Fund (FRF) Grant, University of Denver. PI</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2020&nbsp;&nbsp;Microsoft AI for Earth - Azure Compute Credit Grants. PI</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2019&nbsp;&nbsp;DU Faculty Research Fund (FRF) Grant, University of Denver. PI</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2019&nbsp;&nbsp;DU Internationalization Grant, University of Denver. PI</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2019&nbsp;&nbsp;DU Public Good Fund Grant, University of Denver. Co-PI (Cancelled due to COVID)</li>
+                        </ul>
+                      </section>
+
+                      <section class="award-group" aria-labelledby="graduate-awards">
+                        <h3 id="graduate-awards">Graduate Awards</h3>
+                        <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2017&nbsp;&nbsp;Best Paper Competition Award (2nd Place): International Symposium on Spatiotemporal Computing</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2017&nbsp;&nbsp;Whitbeck Graduate Dissertator Award, Department of Geography, University of Wisconsin-Madison</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2017&nbsp;&nbsp;Trewartha Conference Travel Award, Department of Geography, University of Wisconsin-Madison</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2016&nbsp;&nbsp;Campus-Wide Capstone Ph.D. Teaching Award, University of Wisconsin-Madison</li>
+                        </ul>
+                      </section>
+
+                      <section class="award-group" aria-labelledby="earlier-honors">
+                        <h3 id="earlier-honors">Earlier Honors</h3>
+                        <ul class="fa-ul">
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2009/2010&nbsp;&nbsp;College Students GIS Software Development Contest (3rd Place): ESRI (China)</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2008&nbsp;&nbsp;Excellent Olympics Volunteer Award, Beijing Summer Olympics</li>
+                          <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>2007/2008&nbsp;&nbsp;Undergraduate Student Scholarships, Beijing Normal University</li>
+                        </ul>
+                      </section>
+                    </div>
+
+                    <div class="legacy-service-content" aria-hidden="true">
                     <ul class="fa-ul mb-0">
                       <li>
                           <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
@@ -1515,9 +1764,11 @@
                             2007/2008&nbsp;&nbsp;Undergraduate Student Scholarships, Beijing Normal University
                         </li>
                     </ul>
+                    </div>
                 </div>
             </section>
         </div>
+        <a class="back-to-top js-scroll-trigger" href="#page-top" aria-label="Back to top" title="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

@@ -11,6 +11,21 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.resume-section-content,
+.resume-section > .w-100,
+.overview-card,
+.service-group,
+.award-group,
+.year-group {
+  min-width: 0;
+}
+
 section[id],
 h3[id],
 h4[id],
@@ -398,6 +413,24 @@ section.resume-section {
 }
 
 @media (max-width: 767.98px) {
+  .subheading,
+  .recent-work,
+  .overview-card,
+  .publication-entry,
+  .service-group,
+  .award-group {
+    overflow-wrap: anywhere;
+  }
+
+  .subheading {
+    font-size: 1.25rem;
+  }
+
+  .section-jump-links a,
+  .research-area-links a {
+    max-width: 100%;
+  }
+
   .review-grid {
     grid-template-columns: 1fr;
   }

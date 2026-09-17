@@ -231,10 +231,21 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     revealPublication(window.location.hash);
 
+    // The research section becomes substantially shorter after its repeated
+    // citations are replaced with cross-links. Re-apply the initial fragment
+    // after that restructuring so direct links land at the intended section.
+    if (window.location.hash) {
+        window.requestAnimationFrame(() => {
+            const initialTarget = document.querySelector(window.location.hash);
+            if (initialTarget) initialTarget.scrollIntoView();
+        });
+    }
+
     const backToTop = document.querySelector('.back-to-top');
     if (backToTop) {
         const updateBackToTop = () => backToTop.classList.toggle('is-visible', window.scrollY > 600);
         window.addEventListener('scroll', updateBackToTop, { passive: true });
         updateBackToTop();
     }
+
 });

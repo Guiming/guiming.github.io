@@ -40,27 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
         return match ? match[0].slice(1, -1) : 'Other';
     };
 
-    const publicationTitle = (entry) => {
-        const text = entry.textContent.replace(/\s+/g, ' ').trim();
-        const yearMatch = text.match(/\((19|20)\d{2}\)/);
-        if (!yearMatch) return `Publication ${publicationNumber(entry)}`;
-
-        let title = text.slice(yearMatch.index + yearMatch[0].length).replace(/^[.)\s]+/, '');
-        const venue = entry.querySelector('i');
-        if (venue) {
-            const venueIndex = title.indexOf(venue.textContent.trim());
-            if (venueIndex > 0) title = title.slice(0, venueIndex);
-        }
-        return title.replace(/[.\s]+$/, '') || `Publication ${publicationNumber(entry)}`;
-    };
-
-    const publicationLabel = (entry, number) => {
-        const match = entry.innerHTML.match(/^\s*(\[[\s\S]*?<b>\s*\d+\s*<\/b>\])/i);
-        return match ? match[1] : `<strong>#${number}</strong>`;
-    };
-
-    const publicationEntries = new Map();
-
     const organizePublicationSection = (container) => {
         const entries = Array.from(container.children).filter((child) =>
             child.matches('div.mb-3') && publicationNumber(child)
@@ -73,7 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
             const year = publicationYear(entry);
             entry.id = `publication-${number}`;
             entry.classList.add('publication-entry');
-            publicationEntries.set(number, entry);
             if (!groups.has(year)) groups.set(year, []);
             groups.get(year).push(entry);
         });
@@ -147,19 +125,14 @@ window.addEventListener('DOMContentLoaded', () => {
             core: [26, 24, 23, 22, 7, 6],
             additional: [8, 5],
         },
-        'Other Topics': {
-            core: [9],
-            additional: [],
-        },
     };
 
     const makeResearchList = (entries) => {
-        const list = document.createElement('ul');
+        const list = document.createElement('div');
         list.className = 'research-publication-list';
         entries.forEach((entry) => {
-            const number = publicationNumber(entry);
-            const item = document.createElement('li');
-            item.innerHTML = `<span class="publication-label">${publicationLabel(entry, number)}</span> <a href="#publication-${number}">${publicationTitle(entry)}</a> <span class="text-muted">(${publicationYear(entry)})</span>`;
+            const item = entry.cloneNode(true);
+            item.classList.add('publication-entry');
             list.appendChild(item);
         });
         return list;
@@ -200,15 +173,19 @@ window.addEventListener('DOMContentLoaded', () => {
             const groups = document.createElement('div');
             groups.className = 'research-publication-groups';
 
-            const coreHeading = document.createElement('h4');
-            coreHeading.textContent = 'Core Publications';
-            groups.append(coreHeading, makeResearchList(coreEntries));
+            const core = document.createElement('details');
+            core.className = 'research-publications core-publications';
+            core.open = true;
+            const coreSummary = document.createElement('summary');
+            coreSummary.textContent = 'Core Publications';
+            core.append(coreSummary, makeResearchList(coreEntries));
+            groups.appendChild(core);
 
             if (additionalEntries.length) {
                 const additional = document.createElement('details');
-                additional.className = 'additional-publications';
+                additional.className = 'research-publications additional-publications';
                 const summary = document.createElement('summary');
-                summary.textContent = `Additional Relevant Publications (${additionalEntries.length})`;
+                summary.textContent = 'Additional Relevant Publications';
                 additional.append(summary, makeResearchList(additionalEntries));
                 groups.appendChild(additional);
             }

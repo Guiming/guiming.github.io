@@ -144,26 +144,16 @@ section.resume-section {
   margin: 1.25rem 0 2.5rem;
 }
 
-.research-publication-groups h4 {
-  margin: 1.25rem 0 0.65rem;
-  color: var(--site-ink);
-  font-size: 1.2rem;
-}
-
 .research-publication-list {
-  margin: 0;
-  padding-left: 1.25rem;
+  margin-top: 0.75rem;
 }
 
-.research-publication-list li + li {
-  margin-top: 0.35rem;
+.research-publication-list .publication-entry:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
 }
 
-.research-publication-list .publication-label {
-  white-space: nowrap;
-}
-
-.additional-publications {
+.research-publications {
   margin-top: 1rem;
   padding: 0.75rem 1rem;
   border: 1px solid #dee2e6;
@@ -171,14 +161,10 @@ section.resume-section {
   background: #fff;
 }
 
-.additional-publications summary {
+.research-publications summary {
   color: var(--site-ink);
   font-weight: 800;
   cursor: pointer;
-}
-
-.additional-publications .research-publication-list {
-  margin-top: 0.75rem;
 }
 
 .publication-metrics,
@@ -262,7 +248,7 @@ section.resume-section {
 
 .service-group-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -336,21 +322,15 @@ section.resume-section {
 }
 
 .award-groups {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
+  display: block;
 }
 
 .award-group {
-  padding: 1.1rem 1.25rem;
-  border: 1px solid #dee2e6;
-  border-radius: 0.5rem;
-  background: #fff;
+  padding: 0;
 }
 
-.award-group h3 {
-  margin-bottom: 1rem;
-  font-size: 1.35rem;
+.award-group + .award-group {
+  margin-top: 1.5rem;
 }
 
 .award-group ul {

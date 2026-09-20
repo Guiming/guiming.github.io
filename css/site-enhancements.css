@@ -17,6 +17,12 @@ body {
   overflow-x: hidden;
 }
 
+.social-icons .social-icon-image {
+  display: block;
+  width: 2.25rem;
+  height: auto;
+}
+
 .resume-section-content,
 .resume-section > .w-100,
 .overview-card,
